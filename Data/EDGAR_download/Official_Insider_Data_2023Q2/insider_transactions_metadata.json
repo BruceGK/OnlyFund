@@ -1,0 +1,1401 @@
+{
+	"@context": "http://www.w3.org/ns/csvw",
+	"dialect": {
+		"header": true,
+		"headerRowCount": 1,
+		"delimiter": "\t"
+	},
+	"tables": [
+		{
+			"url": "DERIV_HOLDING.tsv",
+			"tableSchema": {
+				"aboutUrl": "insider_transactions_readme.htm",
+				"primaryKey": ["ACCESSION_NUMBER","DERIV_HOLDING_SK"],
+				"columns": [
+					{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": true,
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "DERIV_HOLDING_SK",
+						"titles": "DERIV HOLDING SK",
+						"required": true,
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "Derivative holding surrogate key"
+					},
+					{
+						"name": "SECURITY_TITLE",
+						"titles": "SECURITY TITLE",
+						"datatype": {
+							"base": "string",
+							"maxLength": 100
+						},
+						"dc:description": "Title of Derivative Security"
+					},
+					{
+						"name": "SECURITY_TITLE_FN",
+						"titles": "SECURITY TITLE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Footnote identifier on Title of Derivative Security"
+					},
+					{
+						"name": "CONV_EXERCISE_PRICE",
+						"titles": "CONV EXERCISE PRICE",
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "Conversion Or exercise price"
+					},
+					{
+						"name": "CONV_EXERCISE_PRICE_FN",
+						"titles": "CONV EXERCISE PRICE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Footnote identifier on conversion or exercise price"
+					},
+					{
+						"name": "TRANS_FORM_TYPE",
+						"titles": "TRANS FORM TYPE",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Transaction form type"
+					},
+					{
+						"name": "TRANS_FORM_TYPE_FN",
+						"titles": "TRANS FORM TYPE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Transaction form type footnote"
+					},
+					{
+						"name": "EXERCISE_DATE",
+						"titles": "EXERCISE DATE",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Date Exercisable and Expiration Date"
+					},
+					{
+						"name": "EXERCISE_DATE_FN",
+						"titles": "EXERCISE DATE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Date Exercisable and Expiration Date footnote"
+					},
+					{
+						"name": "EXPIRATION_DATE",
+						"titles": "EXPIRATION DATE",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Date Exercisable and Expiration Date"
+					},
+					{
+						"name": "EXPIRATION_DATE_FN",
+						"titles": "EXPIRATION DATE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Date Exercisable and Expiration Date footnote"
+					},
+					{
+						"name": "UNDLYNG_SEC_TITLE",
+						"titles": "UNDLYNG SEC TITLE",
+						"datatype": {
+							"base": "string",
+							"maxLength": 100
+						},
+						"dc:description": "Title  of Underlying Securities "
+					},
+					{
+						"name": "UNDLYNG_SEC_TITLE_FN",
+						"titles": "UNDLYNG SEC TITLE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Foot note on Title of Underlying Securities"
+					},
+					{
+						"name": "UNDLYNG_SEC_SHARES",
+						"titles": "UNDLYNG SEC SHARES",
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "Number of shares reported of Underlying Securities"
+					},
+					{
+						"name": "UNDLYNG_SEC_SHARES_FN",
+						"titles": "UNDLYNG SEC SHARES FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Footnote identifier on Number of shares reported of Underlying Securities"
+					},
+					{
+						"name": "UNDLYNG_SEC_VALUE",
+						"titles": "UNDLYNG SEC VALUE",
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "Amount of Underlying Securities value"
+					},
+					{
+						"name": "UNDLYNG_SEC_VALUE_FN",
+						"titles": "UNDLYNG SEC VALUE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Footnote identifier on Amount of Underlying Securities value"
+					},
+					{
+						"name": "SHRS_OWND_FOLWNG_TRANS",
+						"titles": "SHRS OWND FOLWNG TRANS",
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "Shares owned at end of Fiscal Year"
+					},
+					{
+						"name": "SHRS_OWND_FOLWNG_TRANS_FN",
+						"titles": "SHRS OWND FOLWNG TRANS FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Shares owned at end of Fiscal Year footnote"
+					},
+					{
+						"name": "VALU_OWND_FOLWNG_TRANS",
+						"titles": "VALU OWND FOLWNG TRANS",
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "Value owned of the Securities owned at end of Fiscal Year"
+					},
+					{
+						"name": "VALU_OWND_FOLWNG_TRANS_FN",
+						"titles": "VALU OWND FOLWNG TRANS FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Value owned of the  Securities owned at end of Fiscal Year footnote"
+					},
+					{
+						"name": "DIRECT_INDIRECT_OWNERSHIP",
+						"titles": "DIRECT INDIRECT OWNERSHIP",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Ownership Form: Direct or Indirect "
+					},
+					{
+						"name": "DIRECT_INDIRECT_OWNERSHIP_FN",
+						"titles": "DIRECT INDIRECT OWNERSHIP FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Ownership Form: Direct or Indirect  footnote"
+					},
+					{
+						"name": "NATURE_OF_OWNERSHIP",
+						"titles": "NATURE OF OWNERSHIP",
+						"datatype": {
+							"base": "string",
+							"maxLength": 100
+						},
+						"dc:description": "Nature of Indirect Beneficial Ownership "
+					},
+					{
+						"name": "NATURE_OF_OWNERSHIP_FN",
+						"titles": "NATURE OF OWNERSHIP FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Nature of Indirect Beneficial Ownership  footnote"
+					}
+				]
+			}
+		},
+		{
+			"url": "DERIV_TRANS.tsv",
+			"tableSchema": {
+				"aboutUrl": "FORM_345_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER","DERIV_TRANS_SK"],
+				"columns": [
+					{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": true,
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "DERIV_TRANS_SK",
+						"titles": "DERIV TRANS SK",
+						"required": true,
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "derivative transaction surrogate key"
+					},
+					{
+						"name": "SECURITY_TITLE",
+						"titles": "SECURITY TITLE",
+						"datatype": {
+							"base": "string",
+							"maxLength": 100
+						},
+						"dc:description": "Title of Derivative Security"
+					},
+					{
+						"name": "SECURITY_TITLE_FN",
+						"titles": "SECURITY TITLE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Title of Derivative Security footnote"
+					},
+					{
+						"name": "CONV_EXERCISE_PRICE",
+						"titles": "CONV EXERCISE PRICE",
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "Conversion or Exercise Price "
+					},
+					{
+						"name": "CONV_EXERCISE_PRICE_FN",
+						"titles": "CONV EXERCISE PRICE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "conversion or exercise price footnote"
+					},
+					{
+						"name": "TRANS_DATE",
+						"titles": "TRANS DATE",
+						"required": true,
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Transaction date when transaction originally occured"
+					},
+					{
+						"name": "TRANS_DATE_FN",
+						"titles": "TRANS DATE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Transaction date footnote"
+					},
+					{
+						"name": "DEEMED_EXECUTION_DATE",
+						"titles": "DEEMED EXECUTION DATE",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Deemed execution date"
+					},
+					{
+						"name": "DEEMED_EXECUTION_DATE_FN",
+						"titles": "DEEMED EXECUTION DATE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Deemed execution date footnote"
+					},
+					{
+						"name": "TRANS_FORM_TYPE",
+						"titles": "TRANS FORM TYPE",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Type of forms submitted as part of Transaction"
+					},
+					{
+						"name": "TRANS_CODE",
+						"titles": "TRANS CODE",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Mandatory transaction code as provided in TransCodeList choices"
+					},
+					{
+						"name": "EQUITY_SWAP_INVOLVED",
+						"titles": "EQUITY SWAP INVOLVED",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Indicator to show if the transaction involves an equity or swap"
+					},
+					{
+						"name": "EQUITY_SWAP_INVOLVED_FN",
+						"titles": "EQUITY SWAP INVOLVED FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Footnote for transaction involving equity or swap"
+					},
+					{
+						"name": "TRANS_TIMELINESS",
+						"titles": "TRANS TIMELINESS",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Indicator to show timeliness of transaction"
+					},
+					{
+						"name": "TRANS_TIMELINESS_FN",
+						"titles": "TRANS TIMELINESS FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Indicator to show timeliness footnote of transaction"
+					},
+					{
+						"name": "TRANS_SHARES",
+						"titles": "TRANS SHARES",
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "Transaction shares reported when Transaction shares reported when Securities Acquired (A) or Disposed of (D) "
+					},
+					{
+						"name": "TRANS_SHARES_FN",
+						"titles": "TRANS SHARES FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Transaction shares reported when Securities Acquired (A) or Disposed of (D) footnote"
+					},
+					{
+						"name": "TRANS_TOTAL_VALUE",
+						"titles": "TRANS TOTAL VALUE",
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "Transaction total value reported when Securities Acquired (A) or Disposed of (D)"
+					},
+					{
+						"name": "TRANS_TOTAL_VALUE_FN",
+						"titles": "TRANS TOTAL VALUE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Transaction total value reported when Securities Acquired (A) or Disposed of (D) footnote"
+					},
+					{
+						"name": "TRANS_PRICEPERSHARE",
+						"titles": "TRANS PRICEPERSHARE",
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "Price of Derivative Transaction Security "
+					},
+					{
+						"name": "TRANS_PRICEPERSHARE_FN",
+						"titles": "TRANS PRICEPERSHARE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Price of Derivative Transaction Security footnote"
+					},
+					{
+						"name": "TRANS_ACQUIRED_DISP_CD",
+						"titles": "TRANS ACQUIRED DISP CD",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Transaction code reported when Securities Acquired (A) or Disposed of (D) "
+					},
+					{
+						"name": "TRANS_ACQUIRED_DISP_CD_FN",
+						"titles": "TRANS ACQUIRED DISP CD FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Footnote related to Securities transaction (acquired or disposed)"
+					},
+					{
+						"name": "EXCERCISE_DATE",
+						"titles": "EXCERCISE DATE",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Date Exercisable and Expiration Date"
+					},
+					{
+						"name": "EXCERCISE_DATE_FN",
+						"titles": "EXCERCISE DATE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Date Exercisable and Expiration Date footnote"
+					},
+					{
+						"name": "EXPIRATION_DATE",
+						"titles": "EXPIRATION DATE",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Date Exercisable and Expiration Date"
+					},
+					{
+						"name": "EXPIRATION_DATE_FN",
+						"titles": "EXPIRATION DATE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Date Exercisable and Expiration Date footnote"
+					},
+					{
+						"name": "UNDLYNG_SEC_TITLE",
+						"titles": "UNDLYNG SEC TITLE",
+						"datatype": {
+							"base": "string",
+							"maxLength": 100
+						},
+						"dc:description": "Title of Underlying Securities "
+					},
+					{
+						"name": "UNDLYNG_SEC_TITLE_FN",
+						"titles": "UNDLYNG SEC TITLE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Title  of Underlying Securities footnote"
+					},
+					{
+						"name": "UNDLYNG_SEC_SHARES",
+						"titles": "UNDLYNG SEC SHARES",
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "Number of shares owned of Underlying Securities"
+					},
+					{
+						"name": "UNDLYNG_SEC_SHARES_FN",
+						"titles": "UNDLYNG SEC SHARES FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Number of shares owned of Underlying Securities footnote"
+					},
+					{
+						"name": "UNDLYNG_SEC_VALUE",
+						"titles": "UNDLYNG SEC VALUE",
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "Value of Underlying Securities"
+					},
+					{
+						"name": "UNDLYNG_SEC_VALUE_FN",
+						"titles": "UNDLYNG SEC VALUE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Value of Underlying Securities  footnote"
+					},
+					{
+						"name": "SHRS_OWND_FOLWNG_TRANS",
+						"titles": "SHRS OWND FOLWNG TRANS",
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "Shares owned at end of Fiscal Year "
+					},
+					{
+						"name": "SHRS_OWND_FOLWNG_TRANS_FN",
+						"titles": "SHRS OWND FOLWNG TRANS FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Shares owned at end of Fiscal Year footnote"
+					},
+					{
+						"name": "VALU_OWND_FOLWNG_TRANS",
+						"titles": "VALU OWND FOLWNG TRANS",
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "Value owned at end of Fiscal Year "
+					},
+					{
+						"name": "VALU_OWND_FOLWNG_TRANS_FN",
+						"titles": "VALU OWND FOLWNG TRANS FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Value owned at end of Fiscal Year footnote"
+					},
+					{
+						"name": "DIRECT_INDIRECT_OWNERSHIP",
+						"titles": "DIRECT INDIRECT OWNERSHIP",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Direct or indirect ownership"
+					},
+					{
+						"name": "DIRECT_INDIRECT_OWNERSHIP_FN",
+						"titles": "DIRECT INDIRECT OWNERSHIP FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Direct or indirect ownership footnote"
+					},
+					{
+						"name": "NATURE_OF_OWNERSHIP",
+						"titles": "NATURE OF OWNERSHIP",
+						"datatype": {
+							"base": "string",
+							"maxLength": 100
+						},
+						"dc:description": "Nature of ownership"
+					},
+					{
+						"name": "NATURE_OF_OWNERSHIP_FN",
+						"titles": "NATURE OF OWNERSHIP FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Nature of ownership footnote"
+					}
+				]
+			}
+		},
+		{
+			"url": "FOOTNOTES.tsv",
+			"tableSchema": {
+				"aboutUrl": "FORM_345_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER","FOOTNOTE_ID"],
+				"columns": [
+					{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": true,
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "FOOTNOTE_ID",
+						"titles": "FOOTNOTE ID",
+						"required": true,
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Footnote identifier"
+					},
+					{
+						"name": "FOOTNOTE_TXT",
+						"titles": "FOOTNOTE TXT",
+						"datatype": {
+							"base": "string",
+							"maxLength": 4000
+						},
+						"dc:description": "Footnote text"
+					}
+				]
+			}
+		},
+		{
+			"url": "NONDERIV_HOLDING.tsv",
+			"tableSchema": {
+				"aboutUrl": "FORM_345_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER","NONDERIV_HOLDING_SK"],
+				"columns": [
+					{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": true,
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "NONDERIV_HOLDING_SK",
+						"titles": "NONDERIV HOLDING SK",
+						"required": true,
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "Nonderivative holding  surrogate key"
+					},
+					{
+						"name": "SECURITY_TITLE",
+						"titles": "SECURITY TITLE",
+						"datatype": {
+							"base": "string",
+							"maxLength": 100
+						},
+						"dc:description": "Security title"
+					},
+					{
+						"name": "SECURITY_TITLE_FN",
+						"titles": "SECURITY TITLE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Footnote Identifier on Security title"
+					},
+					{
+						"name": "TRANS_FORM_TYPE",
+						"titles": "TRANS FORM TYPE",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Transaction form type"
+					},
+					{
+						"name": "TRANS_FORM_TYPE_FN",
+						"titles": "TRANS FORM TYPE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Footnote Identifier on Transaction form type"
+					},
+					{
+						"name": "SHRS_OWND_FOLWNG_TRANS",
+						"titles": "SHRS OWND FOLWNG TRANS",
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "Shares owned following transaction"
+					},
+					{
+						"name": "SHRS_OWND_FOLWNG_TRANS_FN",
+						"titles": "SHRS OWND FOLWNG TRANS FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Footnote Identifier for Shares owned following transaction"
+					},
+					{
+						"name": "VALU_OWND_FOLWNG_TRANS",
+						"titles": "VALU OWND FOLWNG TRANS",
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "Value owned following transaction"
+					},
+					{
+						"name": "VALU_OWND_FOLWNG_TRANS_FN",
+						"titles": "VALU OWND FOLWNG TRANS FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Footnote Identifier on value owned following transaction"
+					},
+					{
+						"name": "DIRECT_INDIRECT_OWNERSHIP",
+						"titles": "DIRECT INDIRECT OWNERSHIP",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Direct or Indirect ownership"
+					},
+					{
+						"name": "DIRECT_INDIRECT_OWNERSHIP_FN",
+						"titles": "DIRECT INDIRECT OWNERSHIP FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Footnote Identifier on Direct or Indirect ownership"
+					},
+					{
+						"name": "NATURE_OF_OWNERSHIP",
+						"titles": "NATURE OF OWNERSHIP",
+						"datatype": {
+							"base": "string",
+							"maxLength": 100
+						},
+						"dc:description": "Nature of Indirect Beneficial Ownership"
+					},
+					{
+						"name": "NATURE_OF_OWNERSHIP_FN",
+						"titles": "NATURE OF OWNERSHIP FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Footnote Identifier on Nature of Indirect Beneficial Ownership"
+					}
+				]
+			}
+		},
+		{
+			"url": "NONDERIV_TRANS.tsv",
+			"tableSchema": {
+				"aboutUrl": "FORM_345_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER","NONDERIV_TRANS_SK"],
+				"columns": [
+					{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": true,
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},					
+					{
+						"name": "NONDERIV_TRANS_SK",
+						"titles": "NONDERIV TRANS SK",
+						"required": true,
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "Nonderiv transaction surrogate key"
+					},
+					
+					{
+						"name": "SECURITY_TITLE",
+						"titles": "SECURITY TITLE",
+						"datatype": {
+							"base": "string",
+							"maxLength": 100
+						},
+						"dc:description": "Title of Security"
+					},
+					{
+						"name": "SECURITY_TITLE_FN",
+						"titles": "SECURITY TITLE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 300
+						},
+						"dc:description": "Security title footnote"
+					},
+					{
+						"name": "TRANS_DATE",
+						"titles": "TRANS DATE",
+						"required": true,
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Transaction date"
+					},
+					{
+						"name": "TRANS_DATE_FN",
+						"titles": "TRANS DATE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Footnote Identifier Transaction date"
+					},
+					{
+						"name": "DEEMED_EXECUTION_DATE",
+						"titles": "DEEMED EXECUTION DATE",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Deemed execution date"
+					},
+					{
+						"name": "DEEMED_EXECUTION_DATE_FN",
+						"titles": "DEEMED EXECUTION DATE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Footnote Identifier Deemed execution date"
+					},
+					{
+						"name": "TRANS_FORM_TYPE",
+						"titles": "TRANS FORM TYPE",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Transaction form type"
+					},
+					{
+						"name": "TRANS_CODE",
+						"titles": "TRANS CODE",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Transaction code"
+					},
+					{
+						"name": "EQUITY_SWAP_INVOLVED",
+						"titles": "EQUITY SWAP INVOLVED",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Indicator to show if the transaction involves an equity or swap"
+					},
+					{
+						"name": "EQUITY_SWAP_INVOLVED_FN",
+						"titles": "EQUITY SWAP INVOLVED FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Footnote Identifier Transaction involving equity or swap"
+					},
+					{
+						"name": "TRANS_TIMELINESS",
+						"titles": "TRANS TIMELINESS",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Transaction timeliness"
+					},
+					{
+						"name": "TRANS_TIMELINESS_FN",
+						"titles": "TRANS TIMELINESS FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Transaction timeliness footnote"
+					},
+					{
+						"name": "TRANS_SHARES",
+						"titles": "TRANS SHARES",
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "Transaction shares reported when Securities Acquired (A) or Disposed of (D)"
+					},
+					{
+						"name": "TRANS_SHARES_FN",
+						"titles": "TRANS SHARES FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Footnote Identifier transaction shares reported when Securities Acquired (A) or Disposed of (D)"
+					},
+					{
+						"name": "TRANS_PRICEPERSHARE",
+						"titles": "TRANS PRICEPERSHARE",
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "Price of non-Derivative Transaction Security "
+					},
+					{
+						"name": "TRANS_PRICEPERSHARE_FN",
+						"titles": "TRANS PRICEPERSHARE FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Price of Derivative Transaction Security  footnote"
+					},
+					{
+						"name": "TRANS_ACQUIRED_DISP_CD",
+						"titles": "TRANS ACQUIRED DISP CD",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Transaction code reported when Securities Acquired (A) or Disposed of (D)"
+					},
+					{
+						"name": "TRANS_ACQUIRED_DISP_CD_FN",
+						"titles": "TRANS ACQUIRED DISP CD FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Transaction code reported when Securities Acquired (A) or Disposed of (D) footnote"
+					},
+					{
+						"name": "SHRS_OWND_FOLWNG_TRANS",
+						"titles": "SHRS OWND FOLWNG TRANS",
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "Securities owned at end of Fiscal Year"
+					},
+					{
+						"name": "SHRS_OWND_FOLWNG_TRANS_FN",
+						"titles": "SHRS OWND FOLWNG TRANS FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Securities owned at end of Fiscal Year footnote"
+					},
+					{
+						"name": "VALU_OWND_FOLWNG_TRANS",
+						"titles": "VALU OWND FOLWNG TRANS",
+						"datatype": {
+							"base": "NUMBER",
+							"maxLength": 22
+						},
+						"dc:description": "following reported transaction(s) "
+					},
+					{
+						"name": "VALU_OWND_FOLWNG_TRANS_FN",
+						"titles": "VALU OWND FOLWNG TRANS FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Footnote  for following reported transaction(s)"
+					},
+					{
+						"name": "DIRECT_INDIRECT_OWNERSHIP",
+						"titles": "DIRECT INDIRECT OWNERSHIP",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Direct or Indirect ownership"
+					},
+					{
+						"name": "DIRECT_INDIRECT_OWNERSHIP_FN",
+						"titles": "DIRECT INDIRECT OWNERSHIP FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Direct or Indirect ownership footnote ID"
+					},
+					{
+						"name": "NATURE_OF_OWNERSHIP",
+						"titles": "NATURE OF OWNERSHIP",
+						"datatype": {
+							"base": "string",
+							"maxLength": 100
+						},
+						"dc:description": "Nature of Indirect Beneficial Ownership "
+					},
+					{
+						"name": "NATURE_OF_OWNERSHIP_FN",
+						"titles": "NATURE OF OWNERSHIP FN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Footnote Identifier on nature of Indirect Beneficial Ownership"
+					}
+				]
+			}
+		},
+		{
+			"url": "OWNER_SIGNATURE.tsv",
+			"tableSchema": {
+				"aboutUrl": "FORM_345_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER","OWNERSIGNATURENAME"],
+				"columns": [
+					{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": true,
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "OWNERSIGNATURENAME",
+						"titles": "OWNERSIGNATURENAME",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Reporting owner signature name"
+					},
+					{
+						"name": "OWNERSIGNATUREDATE",
+						"titles": "OWNERSIGNATUREDATE",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Reporting owner signature date"
+					}
+				]
+			}
+		},
+		{
+			"url": "REPORTINGOWNER.tsv",
+			"tableSchema": {
+				"aboutUrl": "FORM_345_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER", "RPTOWNERCIK"],
+				"columns": [
+					{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": true,
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "RPTOWNERCIK",
+						"titles": "RPTOWNERCIK",
+						"required": true,
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Central Index Key of reporting owner"
+					},
+					{
+						"name": "RPTOWNERNAME",
+						"titles": "RPTOWNERNAME",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Reporting ownername"
+					},
+					{
+						"name": "RPTOWNER_RELATIONSHIP",
+						"titles": "RPTOWNER RELATIONSHIP",
+						"datatype": {
+							"base": "string",
+							"maxLength": 100
+						},
+						"dc:description": "Reporting owner relationship OFFICER, DIRECTOR, TENPERCENTOWNER , OTHER"
+					},
+					{
+						"name": "RPTOWNER_TITLE",
+						"titles": "RPTOWNER TITLE",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Reporting owner title if relationship is DIRECTOR"
+					},
+					{
+						"name": "RPTOWNER_TXT",
+						"titles": "RPTOWNER TXT",
+						"datatype": {
+							"base": "string",
+							"maxLength": 100
+						},
+						"dc:description": "If Reporting owner relationship is 'OTHER' then provide additional details"
+					},
+					{
+						"name": "RPTOWNER_STREET1",
+						"titles": "RPTOWNER STREET1",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Reporting owner Street address first line"
+					},
+					{
+						"name": "RPTOWNER_STREET2",
+						"titles": "RPTOWNER STREET2",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Reporting owner Street address second line"
+					},
+					{
+						"name": "RPTOWNER_CITY",
+						"titles": "RPTOWNER CITY",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Reporting owner City"
+					},
+					{
+						"name": "RPTOWNER_STATE",
+						"titles": "RPTOWNER STATE",
+						"datatype": {
+							"base": "string",
+							"maxLength": 2
+						},
+						"dc:description": "Reporting owner State"
+					},
+					{
+						"name": "RPTOWNER_ZIPCODE",
+						"titles": "RPTOWNER ZIPCODE",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Reporting owner address zipcode"
+					},
+					{
+						"name": "RPTOWNER_STATE_DESC",
+						"titles": "RPTOWNER STATE DESC",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Description of Reporting Owner State"
+					},
+					{
+						"name": "FILE_NUMBER",
+						"titles": "FILE NUMBER",
+						"datatype": {
+							"base": "string",
+							"maxLength": 30
+						},
+						"dc:description": "Filing identifier assigned by SEC when sourced from Edgar"
+					}
+				]
+			}
+		},
+		{
+			"url": "SUBMISSION.tsv",
+			"tableSchema": {
+				"aboutUrl": "FORM_345_readme.html",
+				"primaryKey": "ACCESSION_NUMBER",
+				"columns": [
+					{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": true,
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "FILING_DATE",
+						"titles": "FILING DATE",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Indicate FILING_DATE is sourced from EDGAR"
+					},
+					{
+						"name": "PERIOD_OF_REPORT",
+						"titles": "PERIOD OF REPORT",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Date of Event Requiring Statement"
+					},
+					{
+						"name": "DATE_OF_ORIG_SUB",
+						"titles": "DATE OF ORIG SUB",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "If the original form is amended, this field corresponds to the date Date Original Filed "
+					},
+					{
+						"name": "NO_SECURITIES_OWNED",
+						"titles": "NO SECURITIES OWNED",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Derived value on Form 3 based on the number of entries in <nonDerativeTable> and <DerativeTable> sections of document.  If either table has at least one valid entry, EDGAR will set this element to true.  Otherwise, it will be set to false"
+					},
+					{
+						"name": "NOT_SUBJECT_SEC16",
+						"titles": "NOT SUBJECT SEC16",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "In a Form 4 or Form 5, true for a reporting person not subject to Section 16 and no transaction or holdings reporting in <nonDerativeTable> and <DerativeTable> sections of document"
+					},
+					{
+						"name": "FORM3_HOLDINGS_REPORTED",
+						"titles": "FORM3 HOLDINGS REPORTED",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "EDGAR derived value on Form 3 or Form 4 based on the number of <nonDerivativeHolding> and <derivativeHolding> elements with a <transactionFormType> value of “3.” If at least one “3” holding is being reported, EDGAR will set this element to true. Otherwise, it will be set to false"
+					},
+					{
+						"name": "FORM4_TRANS_REPORTED",
+						"titles": "FORM4 TRANS REPORTED",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "EDGAR derived value on Form 3 or Form 4 based on the number of <nonDerivativeTransaction> and <derivativeTransaction> elements with a <transactionFormType> value of “4.” If at least one “4” transaction is being reported, EDGAR will set this element to true. Otherwise, it will be set to false"
+					},
+					{
+						"name": "DOCUMENT_TYPE",
+						"titles": "DOCUMENT TYPE",
+						"datatype": {
+							"base": "string",
+							"maxLength": 20
+						},
+						"dc:description": "Submission type is either an initial filing Form 3,4,5 or an amendment of either 3/A, 4/A or 5/A"
+					},
+					{
+						"name": "ISSUERCIK",
+						"titles": "ISSUERCIK",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Central Index Key of Issuer"
+					},
+					{
+						"name": "ISSUERNAME",
+						"titles": "ISSUERNAME",
+						"datatype": {
+							"base": "string",
+							"maxLength": 255
+						},
+						"dc:description": "Name of Issuer"
+					},
+					{
+						"name": "ISSUERTRADINGSYMBOL",
+						"titles": "ISSUERTRADINGSYMBOL",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Issuer Trading Symbol"
+					},
+					{
+						"name": "CONTACT_NAME",
+						"titles": "CONTACT NAME",
+						"datatype": {
+							"base": "string",
+							"maxLength": 60
+						},
+						"dc:description": "Name of Contact"
+					},
+					{
+						"name": "CONTACT_PHONE_NUMBER",
+						"titles": "CONTACT PHONE NUMBER",
+						"datatype": {
+							"base": "string",
+							"maxLength": 20
+						},
+						"dc:description": "Phone number of Contact"
+					},
+					{
+						"name": "CONTACT_EMAIL_ADDRESS",
+						"titles": "CONTACT EMAIL ADDRESS",
+						"datatype": {
+							"base": "string",
+							"maxLength": 250
+						},
+						"dc:description": "Email address of Contact"
+					},
+					{
+						"name": "NOTIFICATION_EMAIL_ADDRESS",
+						"titles": "NOTIFICATION EMAIL ADDRESS",
+						"datatype": {
+							"base": "string",
+							"maxLength": 250
+						},
+						"dc:description": "Email address of NOTIFICATION"
+					},
+					{
+						"name": "REMARKS",
+						"titles": "REMARKS",
+						"datatype": {
+							"base": "string",
+							"maxLength": 4000
+						},
+						"dc:description": "Remarks from reporting owner"
+					}
+				]
+			}
+		}
+	]
+}
